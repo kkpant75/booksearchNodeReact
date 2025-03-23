@@ -14,10 +14,22 @@ Before proceeding, ensure you have the following installed on your machine:
 ## Step 1: Clone the Project (Optional)
 
 If you haven’t already created the project, you can clone it or create it from scratch. Here's the structure of the project:
-
-book-search-app/ ├── backend/ │ ├── server.js │ ├── package.json │ ├── Dockerfile │ └── .dockerignore ├── frontend/ │ ├── src/ │ ├── public/ │ ├── package.json │ ├── Dockerfile │ └── .dockerignore ├── docker-compose.yml └── README.md
-
-
+'''
+book-search-app/
+  ├── backend/
+  │   ├── server.js
+  │   ├── package.json
+  │   ├── Dockerfile
+  │   └── .dockerignore
+  ├── frontend/
+  │   ├── src/
+  │   ├── public/
+  │   ├── package.json
+  │   ├── Dockerfile
+  │   └── .dockerignore
+  ├── docker-compose.yml
+  └── README.md
+ ''' 
 
 ###To create the project from scratch, follow the detailed instructions in the previous message for setting up React and Node.js and adding Docker configuration.
 
@@ -27,7 +39,7 @@ book-search-app/ ├── backend/ │ ├── server.js │ ├── packag
 
 In the `backend/` directory, create a `Dockerfile` that describes how to package the backend application:
 
-```dockerfile
+'''
 # Use the official Node.js image as the base
 FROM node:16
 
@@ -49,7 +61,7 @@ EXPOSE 5000
 # Command to run the server
 CMD ["node", "server.js"]
 
-```
+'''
 
 2.2: Backend .dockerignore
 To prevent unnecessary files from being copied into the Docker image, create a .dockerignore file in the backend/ directory.
