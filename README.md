@@ -102,8 +102,6 @@ The docker-compose.yml file is used to configure and manage both the backend and
 ## 4.1: docker-compose.yml
 In the root directory of the project, create a docker-compose.yml file that defines both the backend and frontend services:
 ```
-yaml
-Copy
 version: '3.7'
 
 services:
